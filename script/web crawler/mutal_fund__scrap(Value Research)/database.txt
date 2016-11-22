@@ -1,0 +1,38 @@
+create table mutual_fund(id int primary key,name varchar(100),fund_family varchar(100),fund_class varchar(100),family varchar(3));
+
+create table returns(id int,period varchar(20),return_percentage varchar(10),rank varchar(10),foreign key(id) references mutual_fund(id));
+
+create table scheme_details(id int,fund_type varchar(40),investment_plan varchar(40),launch_date varchar(40),benchmark varchar(40),asset_size__rs_cr_ varchar(40),minimum_investment varchar(40),last_dividend varchar(40),bonus varchar(40),fund_manager varchar(40),notes varchar(40),foreign key(id) references mutual_fund(id));
+
+create table absolute_returns(id int,year varchar(5),Qtr1 varchar(10),Qtr2 varchar(10),Qtr3 varchar(10),Qtr4 varchar(10),Annual varchar(10),foreign key(id) references mutual_fund(id));
+
+create table load_details(id int,entry_load varchar(100),exit_load varchar(100),load_comments varchar(100),foreign key(id) references mutual_fund(id)); 
+
+
+create table contact_details(id int,regd__office varchar(100),tel__no_ varchar(100),fax_no_ varchar(100),email varchar(100),website varchar(100),foreign key(id) references mutual_fund(id)); 
+
+create table top_holdings(id int,equity varchar(100),sector varchar(100),val_rs_cr varchar(100),asset varchar(100),foreign key(id) references mutual_fund(id));
+
+create table asset_allocation(id int,type varchar(100),value varchar(100),foreign key(id) references mutual_fund(id));	
+
+create table concentration_holdings(id int,type varchar(100),value varchar(100),foreign key(id) references mutual_fund(id));
+
+
+create table concentration_sector(id int,type varchar(100),value varchar(100),foreign key(id) references mutual_fund(id));
+==================================================================================================
+
+
+CREATE table mutual_fund_VR(id int PRIMARY KEY,fundname varchar(100),Growth double ,Dividend double,Category varchar(1000),Assets_rs_cr float,Assets_rs_date date,Expense_percentage float,Expense_date date)
+
+CREATE TABLE `peer_comparision` (
+  `id` int(11) DEFAULT NULL,
+  `fund` varchar(1000) DEFAULT NULL,
+  `launch` varchar(100) DEFAULT NULL,
+  `1_Y_ret` float DEFAULT NULL,
+  `3_Y_ret` float DEFAULT NULL,
+  `5_Y_ret` float DEFAULT NULL,
+  `Expense_ratio` float DEFAULT NULL,
+  `Assets` float DEFAULT NULL,
+   foreign key(id) references mutual_fund_VR(id)
+)
+

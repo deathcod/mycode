@@ -1,0 +1,97 @@
+create table mutual_fund(id int primary key,name varchar(100),fund_family varchar(100),fund_class varchar(100),family varchar(3));
+
+create table returns(id int,period varchar(20),return_percentage varchar(10),rank varchar(10),foreign key(id) references mutual_fund(id));
+
+create table scheme_details(id int,fund_type varchar(40),investment_plan varchar(40),launch_date varchar(40),benchmark varchar(40),asset_size__rs_cr_ varchar(40),minimum_investment varchar(40),last_dividend varchar(40),bonus varchar(40),fund_manager varchar(40),notes varchar(40),foreign key(id) references mutual_fund(id));
+
+create table absolute_returns(id int,year varchar(5),Qtr1 varchar(10),Qtr2 varchar(10),Qtr3 varchar(10),Qtr4 varchar(10),Annual varchar(10),foreign key(id) references mutual_fund(id));
+
+create table load_details(id int,entry_load varchar(100),exit_load varchar(100),load_comments varchar(100),foreign key(id) references mutual_fund(id)); 
+
+
+create table contact_details(id int,regd__office varchar(100),tel__no_ varchar(100),fax_no_ varchar(100),email varchar(100),website varchar(100),foreign key(id) references mutual_fund(id)); 
+
+create table top_holdings(id int,equity varchar(100),sector varchar(100),val_rs_cr varchar(100),asset varchar(100),foreign key(id) references mutual_fund(id));
+
+create table asset_allocation(id int,type varchar(100),value varchar(100),foreign key(id) references mutual_fund(id));	
+
+create table concentration_holdings(id int,type varchar(100),value varchar(100),foreign key(id) references mutual_fund(id));
+
+
+create table concentration_sector(id int,type varchar(100),value varchar(100),foreign key(id) references mutual_fund(id));
+
+
+
+create table mutual_funds_family_CEL (url varchar(500) UNIQUE,store_array LONGTEXT);
+create table mutual_funds_family_CES (url varchar(500) UNIQUE,store_array LONGTEXT);
+create table mutual_funds_family_CED (url varchar(500) UNIQUE,store_array LONGTEXT);
+create table mutual_funds_family_CEI (url varchar(500) UNIQUE,store_array LONGTEXT);
+create table mutual_funds_family_CEE (url varchar(500) UNIQUE,store_array LONGTEXT);
+create table mutual_funds_family_CSP (url varchar(500) UNIQUE,store_array LONGTEXT);
+create table mutual_funds_family_CSB (url varchar(500) UNIQUE,store_array LONGTEXT);
+create table mutual_funds_family_CSF (url varchar(500) UNIQUE,store_array LONGTEXT);
+create table mutual_funds_family_CST (url varchar(500) UNIQUE,store_array LONGTEXT);
+create table mutual_funds_family_CSO (url varchar(500) UNIQUE,store_array LONGTEXT);
+create table mutual_funds_family_CIN (url varchar(500) UNIQUE,store_array LONGTEXT);
+create table mutual_funds_family_CRG (url varchar(500) UNIQUE,store_array LONGTEXT);
+create table mutual_funds_family_CEA (url varchar(500) UNIQUE,store_array LONGTEXT);
+create table mutual_funds_family_CBA (url varchar(500) UNIQUE,store_array LONGTEXT);
+create table mutual_funds_family_CDL (url varchar(500) UNIQUE,store_array LONGTEXT);
+create table mutual_funds_family_CDS (url varchar(500) UNIQUE,store_array LONGTEXT);
+create table mutual_funds_family_COF (url varchar(500) UNIQUE,store_array LONGTEXT);
+create table mutual_funds_family_CFS (url varchar(500) UNIQUE,store_array LONGTEXT);
+create table mutual_funds_family_CFL (url varchar(500) UNIQUE,store_array LONGTEXT);
+create table mutual_funds_family_CUD (url varchar(500) UNIQUE,store_array LONGTEXT);
+create table mutual_funds_family_CGS (url varchar(500) UNIQUE,store_array LONGTEXT);
+create table mutual_funds_family_CGL (url varchar(500) UNIQUE,store_array LONGTEXT);
+create table mutual_funds_family_CMA (url varchar(500) UNIQUE,store_array LONGTEXT);
+create table mutual_funds_family_CMC (url varchar(500) UNIQUE,store_array LONGTEXT);
+create table mutual_funds_family_CLQ (url varchar(500) UNIQUE,store_array LONGTEXT);
+create table mutual_funds_family_CEG (url varchar(500) UNIQUE,store_array LONGTEXT);
+create table mutual_funds_family_CIG (url varchar(500) UNIQUE,store_array LONGTEXT);
+create table mutual_funds_family_CFE (url varchar(500) UNIQUE,store_array LONGTEXT);
+create table mutual_funds_family_CFH (url varchar(500) UNIQUE,store_array LONGTEXT);
+create table mutual_funds_family_CFD (url varchar(500) UNIQUE,store_array LONGTEXT);
+create table mutual_funds_family_CFC (url varchar(500) UNIQUE,store_array LONGTEXT);
+create table mutual_funds_family_CDC (url varchar(500) UNIQUE,store_array LONGTEXT);
+create table mutual_funds_family_CDH (url varchar(500) UNIQUE,store_array LONGTEXT);
+create table mutual_funds_family_CEH (url varchar(500) UNIQUE,store_array LONGTEXT);
+
+
+drop table mutual_funds_family_CEL;
+drop table mutual_funds_family_CES;
+drop table mutual_funds_family_CED;
+drop table mutual_funds_family_CEI;
+drop table mutual_funds_family_CEE;
+drop table mutual_funds_family_CSP;
+drop table mutual_funds_family_CSB;
+drop table mutual_funds_family_CSF;
+drop table mutual_funds_family_CST;
+drop table mutual_funds_family_CSO;
+drop table mutual_funds_family_CIN;
+drop table mutual_funds_family_CRG;
+drop table mutual_funds_family_CEA;
+drop table mutual_funds_family_CBA;
+drop table mutual_funds_family_CDL;
+drop table mutual_funds_family_CDS;
+drop table mutual_funds_family_COF;
+drop table mutual_funds_family_CFS;
+drop table mutual_funds_family_CFL;
+drop table mutual_funds_family_CUD;
+drop table mutual_funds_family_CGS;
+drop table mutual_funds_family_CGL;
+drop table mutual_funds_family_CMA;
+drop table mutual_funds_family_CMC;
+drop table mutual_funds_family_CLQ;
+drop table mutual_funds_family_CEG;
+drop table mutual_funds_family_CIG;
+drop table mutual_funds_family_CFE;
+drop table mutual_funds_family_CFH;
+drop table mutual_funds_family_CFD;
+drop table mutual_funds_family_CFC;
+drop table mutual_funds_family_CDC;
+drop table mutual_funds_family_CDH;
+drop table mutual_funds_family_CEH;
+
+
+http://139.59.11.32/mannu_bot/mutal_fund__scrap/mf.php

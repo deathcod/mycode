@@ -1,0 +1,10 @@
+Sally's question is: 3,5
+Correct Answer
+Darrell: 10points
+Darrell's question is: 4,8
+Correct Answer
+Sally: 10points
+Total Points:
+Sally: 10points
+Darrell: 10points
+Game Result: Draw
