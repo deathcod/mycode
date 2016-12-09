@@ -1,0 +1,2 @@
+xhttp.open("GET", "ajax_info.txt", true);
+true is specified when we want the function to run when the response is ready.

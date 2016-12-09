@@ -11,7 +11,7 @@ int max(int a,int b)
 }
 int main()
 {
-    int a[]={10,9,8,7,6,5,4,3,2};
+    int a[]={10,9,8,7,6,5,3,4,2};
     int dp[10];
     for(int i=0;i<=8;i++)
     {
@@ -22,7 +22,13 @@ int main()
             dp[i]=max(dp[i],1+dp[j]);
         }
     }
-    printf("%d\n",dp[8] );
+    int max_Lis = 0;
+    for (int i = 0; i <= 8; ++i)
+    {
+        max_Lis = max(dp[i],max_Lis);
+        //printf("%d ",dp[i] );
+    }
+    printf("%d\n",max_Lis );
     return 0;
 }
 //O(N^2)solution..

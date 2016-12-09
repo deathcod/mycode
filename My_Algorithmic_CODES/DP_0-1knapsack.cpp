@@ -19,7 +19,7 @@ int main()
         for(int j=1;j<=n;j++)
         {
             if(w[i]<=j)
-                dp[i][j]=max(dp[i-1][j-1]+val[i],dp[i-1][j]);
+                dp[i][j]=max(dp[i-1][j-w[i]]+val[i],dp[i-1][j]);
             else
                 dp[i][j]=dp[i-1][j];
         }

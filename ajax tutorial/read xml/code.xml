@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CD>
+	<ARTIST category = "1">
+		chinmay
+	</ARTIST>
+	<TITLE category = "1">
+		He is cool
+	</TITLE>
+	<ARTIST category = "2">
+		chinmay1
+	</ARTIST>
+	<TITLE category = "2">
+		He is cool1
+	</TITLE>
+	
+	</CD>
