@@ -5,7 +5,7 @@
 	```document.getElementById("demo").src = "Hello.gif";```
 
 *  to change the font size 
-	```document.getElementById('demo').style.fontSize='35px'```
+	```document.getElementById('demo').style.fontSize='35px' ```
 
 *  to hide html element 
 	```document.getElementById("demo").style.display = "none";```
