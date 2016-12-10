@@ -53,23 +53,23 @@ form attribte
 http://www.w3schools.com/html/html_form_attributes.asp
 
 HTML5 added the following attributes for <input>:
-
-autocomplete
-autofocus
-form
-formaction
-formenctype
-formmethod
-formnovalidate
-formtarget
-height and width
-list
-min and max
-multiple
-pattern (regexp)
-placeholder
-required
-step
+ 
+autocomplete 
+autofocus 
+form 
+formaction 
+formenctype 
+formmethod 
+formnovalidate 
+formtarget 
+height and width 
+list 
+min and max 
+multiple 
+pattern (regexp) 
+placeholder 
+required 
+step 
 
 and the following attributes for <form>:
 
@@ -82,3 +82,10 @@ min:	Specifies the minimum value of an input element
 pattern:	Specifies the value pattern of an input element  
 required:	Specifies that the input field requires an element  
 type: 	Specifies the type of an input element  
+
+________________________________________________________________________________________________
+
+DOM values for validation
+
+http://www.w3schools.com/js/js_validation_api.asp
+
