@@ -89,3 +89,12 @@ DOM values for validation
 
 http://www.w3schools.com/js/js_validation_api.asp
 
+# Javascript HTML to DOM Document.
+
+This is helpful for understanding how to write the javascript to change the html. So please follow the link below.
+
+http://www.w3schools.com/js/js_htmldom_document.asp
+
+_________________________________________________________________________________________________
+
+
