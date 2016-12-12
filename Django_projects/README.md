@@ -72,4 +72,59 @@ to see the create table value.
 
 	 python manage.py sqlmigrate user_info 0001
 
+
+to actually add start the change
+
+	python manage.py migrate
+
+
 _________________________________________________________________________________________________
+
+#using the database api in django
+
+	(py3env) deathnote@deathnote:~/Desktop/mycode/Django_projects/basic_project$ python manage.py shell
+	Python 3.4.3 (default, Sep 14 2016, 12:36:27) 
+	[GCC 4.8.4] on linux
+	Type "help", "copyright", "credits" or "license" for more information.
+	(InteractiveConsole)
+	>>> from user_info.models import info
+	>>> info.objects.all()
+	[]
+	>>> a = info(name = 'chinmay', email = 'chinmay.rakshit@gmail.com', mobile = '8981196408', age ='22', Date_of_birth = '23-12-1993', location = 'kolkata, india')
+	>>> a.save()
+	>>> a.name
+	'chinmay'
+	>>> a.id
+	1
+	>>> b = info()
+	>>> b.name = 'naz'
+	>>> b.email = 'paltujanwar@gmail.com'
+	>>> b.mobile = '9911991919'
+	>>> b.age = '22'
+	>>> b.date_of_birth = '23-4-1993'
+	>>> loaction = 'kolkata, india'
+	>>> b.loaction = 'kolkata, india'
+	>>> b.save()
+	>>> b.name
+	'naz'
+	>>> a.name = 'chinmay rakshit'
+	>>> a.save()
+	>>> a.name
+	'chinmay rakshit'
+	>>> 
+
+change and def __str__(self): in your class inside model and volla it changes!
+
+	>>> from user_info.models import info
+	>>> info.objects.all()
+	[<info: chinmay rakshit>, <info: naz>]
+	>>> info.objects.filter(id =1)
+	[<info: chinmay rakshit>]
+	>>> info.objects.filter(id =2)
+	[<info: naz>]
+	>>> info.objects.filter(name__startswith='chin')
+	[<info: chinmay rakshit>]
+
+____________________________________________________________________________________________
+
+Suppose you want to extract the regular expression from the url: simply add paranthesis and it will be extracted, make sure you call the same amount otherside :)

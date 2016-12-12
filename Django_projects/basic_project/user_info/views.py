@@ -1,8 +1,15 @@
-from django.shortcuts import render
-from django.http import HttpResponse
-
+from django.shortcuts import render, get_object_or_404
+from .models import info
 
 # Create your views here.
 
 def index(request):
-	return HttpResponse('<h1>its working time to eat!!<h1>')
+	
+	info_list = info.objects.all()
+	context = {'info_list' : info_list}
+	return render(request, 'user_list/index.html', context)	
+
+def details(request, album_id):
+
+	user = get_object_or_404(info, id = album_id)
+	return render(request, 'user_list/details.html', {'user' : user})	
