@@ -8,7 +8,7 @@ class info(models.Model):
 	email = models.CharField(max_length=100)
 	mobile = models.CharField(max_length=10)
 	age = models.CharField(max_length=3)
-	Date_of_birth = models.CharField(max_length=100)
+	dob = models.CharField(max_length=100)
 	location = models.CharField(max_length=100)
 
 	def __str__(self):
