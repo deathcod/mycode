@@ -104,7 +104,7 @@ function view_user_details(id)
             document.getElementById("location").value = myArr['location'];
         }
     };
-    xhttp.open("GET", "http://127.0.0.1:8000/user_info/"+id+"/", true);
+    xhttp.open("GET", "../"+id+"/", true);
     xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     xhttp.send();
 }
@@ -132,7 +132,7 @@ function csrfSafeMethod(method) {
 
 function redirect()
 {
-    window.open('http://127.0.0.1:8000/user_info/details/');
+    window.open('../details/');
     window.close();
 }
 
@@ -190,12 +190,12 @@ $('#subadd').click(function(event){
     if(id === undefined)
     {
         method = 'POST';
-        url = 'http://127.0.0.1:8000/user_info/create/'
+        url = '../create/'
     }
     else
     {
         method = 'PUT';
-        url = 'http://127.0.0.1:8000/user_info/'+id+'/edit/';
+        url = '../'+id+'/edit/';
     }
     $.ajax({
         type: method,

@@ -25,6 +25,7 @@
 </html>
 
 <script>
+
 function pagination(page=1)	
 {
 	/*TODO
@@ -57,7 +58,7 @@ function view_user_details(page=1)
         	view_user_table(myArr,parseInt(page));
 		}
 	};
-	xhttp.open("GET", "http://127.0.0.1:8000/user_info/?page="+page, true);
+	xhttp.open("GET", "../?page="+page, true);
 	xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 	xhttp.send();
 }
@@ -133,9 +134,9 @@ function view_user_table(arr,page)
 function redirect(id =-1)
 {
 	if(id==-1)
-		window.open('http://127.0.0.1:8000/user_info/add_edit/');
+		window.open('../add_edit/');
 	else
-   		window.open('http://127.0.0.1:8000/user_info/add_edit/?id='+id);
+   		window.open('../add_edit/?id='+id);
     window.close();
 }
 pagination();
