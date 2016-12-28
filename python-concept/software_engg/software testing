@@ -1,0 +1,237 @@
+software testing
+
+why assertion?
+
+* makes code self-checking, leading to more effective testing.
+* makes code fail early, closer to bug.
+* assign blame.
+* document assumptions
+	preconditons (these are the conditions which are supposed to be right)
+	postconditions( these are the conditions which are supposed to be right after the code has compiled!!)
+	invariants
+
+
+Q>> So do we disable the assertion in produciton??
+advantage
+
+* code run faster
+* code keep going( So sometime we are forced to stop the assertion because we want the production code to go on.! )
+
+
+disadvantage
+
+* what if the code relies on a side-effecting assertion?
+* even in production, it is better to fail early than to go on.
+
+
+So discussing a situation, suppose MARS shuttle is going to land and the very moment there is some kind of assertion failure , due to which there will be a system reboot.So under these conditions, it is better to shut down assertion check and if also any error occurs let it continue so that atleast it doesnot effect the landing procedure.
+
+So when developing we should declare the domain of our activity.
+Like for sqrt = F+ --> F+
+		 sqrt = F  --> F+ Union exceptions
+
+So should we test for negative numbers, answer is yes we should.
+But should not test off the domain.
+
+So in testing specifing the domain is important.
+
+S.U.T = system under test
+
+* fault injection is caused when we create our own function and replace a predefined function which causes error.
+
+* time dependentent input: like double mouse click is so frequent that it produces different functionality then a single mouse click.
+
+example Therac 25  beam of lazer to treat patents,, problem was the race condition.. So when slow clicks was going on nothing went wrong but as soon as everyone started typing fast everything went wrong.
+
+
+* Regression testing is a type of software testing that verifies that software previously developed and tested still performs correctly even after it was changed or interfaced with other software. Changes may include software enhancements, patches, configuration changes, etc.
+
+blackbox testing:
+------------------
+
+* things to keep in mind. 
+* check for large int val==10^18
+* check for large data n >=10^6
+* choose in betwwen a number and work with it for all the test case.
+
+
+
+
+partitioning scheme:
+
+In this a partition is created and part of input is test for one specific part and another for another but it may happen that due to inproper partitioning the former triggered a bug in SUT. So such is not good practice.
+
+Code Coverage
+---------------
+
+It is the part of the input tests that complete covers all the functions and generates output.
+
+
+Test Coverage
+--------------
+
+Measure of the function that are tested by the total number of the functions.
+
+* benifits
+  it gives us a metric 
+  it also provide the % less than the actual coverage
+
+* disadvantage
+  it doesnt confirms if the test are done like 100% achieved still our code is covering all the possible conditions.
+
+
+Splay tree
+----------
+
+same as BST
+
+insert, delete, lookup
+
+
+Line Coverage Vs Statement Coverage
+Line coverage is more to the metric is a line is exceuted whereas statement coverage is more to statements like () if ___ else ____ <-- in this line is counted as one but statements are four hope you got my point.
+
+branch coverage:
+Decision coverage
+
+
+loop coverage: execute line ,zero times , one time, two time etc,
+--------------
+for line in loop:
+	process(line)
+
+MC/DC coverage:
+--------------
+
+modified condition/decision coverage.
+	
+	Branch coverage + 
+	condition takes all the possible value + 
+	every condition independtly affects the outcome of a decision.
+
+example::
+
+if A or (B and C):
+   TF    TF    TF
+
+A, !B , !C  === True and (B and C are not evaluated)
+!A, !B, C   === False So here A evalues, B is evalued once false C is not evaluated
+!A , B , !C === All the 
+
+Path Coverage:
+---------------
+
+foo(a, b, c):
+if a:
+	___________
+if b:
+	___________
+if c:
+	___________
+
+So total number of path: 2*2*2
+
+
+Boundary Coverage
+-----------------
+
+When a program depends upon a range of input then we should test the values for boundary conditions.
+
+* Boundary Condition for Concurrent Software
+  -------------------------------------------
+  
+  so suppose there is a function which calls the function having accounts, so if multiple threads are calling the account, that can have the race condition so to remove that we use synchronisation.
+
+  now while testing we stop the account usage and work..
+
+If I dont want to cover ":pragma :: no cover"
+
+
+What does code that doesnt get covered?
+
+* infeasible code         : Code that are not worth testing 
+* code not worth covering : code if trigger can example abort the test.
+* test suite inadequate   : In this some code is left for later so that the people can later use the product and test and tell and reply.
+
+
+random testing
+
+				   LUHNS ALGORITHM CONT
+--------------------------------------------------------
+
+
+# concise definition of the Luhn checksum:
+#
+# "For a card with an even number of digits, double every odd numbered
+# digit and subtract 9 if the product is greater than 9. Add up all
+# the even digits as well as the doubled-odd digits, and the result
+# must be a multiple of 10 or it's not a valid card. If the card has
+# an odd number of digits, perform the same addition doubling the even
+# numbered digits instead."
+#
+# for more details see here:
+# http://www.merriampark.com/anatomycc.htm
+#
+# also see the Wikipedia entry, but don't do that unless you really
+# want the answer, since it contains working Python code!
+# 
+# Implement the Luhn Checksum algorithm as described above.
+
+# is_luhn_valid takes a credit card number as input and verifies 
+# whether it is valid or not. If it is valid, it returns True, 
+# otherwise it returns False.
+def is_luhn_valid(n):
+    ###Your code here.
+    x = n
+    i = 1
+    count = len(str(x))
+    count = count %2 
+    add = 0
+    while n:
+        f = n%10
+        if count: #odd length
+            if i%2==0: #double even
+                f*=2
+                if f>=10:
+                    f -=9
+                    pass
+                pass
+            pass
+            pass
+        else:     #even length
+            if i%2==1: #double odd
+                f*=2
+                if f>=10:
+                    f -=9
+                    pass
+                pass
+            pass
+        add += f
+        n /= 10
+        i += 1
+        pass
+    return add%10==0
+
+ Fuzzing
+ -------
+
+ used for peretration testing..
+
+ so fuzzing is basically restricting the random testing...
+
+
+ genenrating random test:
+ -----------------------
+ is to generate random test
+
+ mutation random test:
+ ---------------------
+ Is to mutate predefined tests.Inputs are created by modifing the non-randomly generated test cases
+
+bug triage :
+   means figuring out bug that are not none repeatitive. And results in reporting bug that are distinct and parallel.
+
+ * disambiguate based on assertion violation messages
+ * core dump or stack trace.(can be a type of bug to reported)
+ * search over version history. that is it may happen that the bug that occured right now may had already occured in a different version 
+ * ---> reduce the test case which you want to report ---> delta reduction.
