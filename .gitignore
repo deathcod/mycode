@@ -1,5 +1,8 @@
 __pycache__/
-.pyc
+*.pyc
 
 
 script/learning/myenv/
+
+LICENSE.txt
+NOTICE.txt
