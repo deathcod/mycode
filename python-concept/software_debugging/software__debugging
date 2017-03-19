@@ -1,0 +1,40 @@
+infection vs failure <----- very good question
+
+* Every infection can be traced back to a defect that causes it.(Correct)
+* Every exceution of a defect causes infection (Wrong)
+* Every infection ends in a failure (Wrong)
+* Every defect can cause a failure (Wrong)
+
+defect --> Is an error in the  code
+failure --> Is an error in the execution
+infection --> Is an error in a state.
+
+So you may argue how a defect not a failure , well may be the code is not reachable at the time of execution.
+
+Scientific- Method for debugging:
+----------------------------------
+
+* a framework that explains and predicts the observations 
+* a particularly useful hypotesis
+* outcome of a scientific method
+
+
+									successful observation
+                          |-------------------------------------------<|
+Initial observation --> hypothesis --> prediction --> experiment --> observation --> Theory
+						  ^.-------------------------------------------<|
+						  			unsuccessful observation
+
+
+Making Assertion ON
+
+Python : The option -O turns assetions off.
+C/C++ : -DNDEBUG => assertion off.
+Java : -ea to enable assertion.
+
+
+>> data invariants:: 
+In computer science, an invariant is a condition that can be relied upon to be true during execution of a program, or during some portion of it. It is a logical assertion that is held to always be true during a certain phase of execution.
+
+>> provide preconditions
+>> provide postconditions

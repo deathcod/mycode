@@ -1,0 +1,60 @@
+Correct Return Value: Yes
+
+Execution Time: 0.001s
+
+Peak memory used: 11.891MB
+
+Return Value:
+3
+
+Standard Output:
+current row = 0
+current_col = 1
+/*denotes the row number to which the column is linked*/
+ next = -1
+OUT row_match[0] = 1
+OUT col_match[1] = 0
+_____________________________________
+current row = 1
+current_col = 0
+/*denotes the row number to which the column is linked*/
+ next = -1
+OUT row_match[1] = 0
+OUT col_match[0] = 1
+_____________________________________
+current row = 2
+current_col = 0
+/*denotes the row number to which the column is linked*/
+ next = 1
+next is here setting its parent as 2
+current_col = 1
+/*denotes the row number to which the column is linked*/
+ next = 0
+next is here setting its parent as 2
+current row = 1
+current_col = 0
+/*denotes the row number to which the column is linked*/
+ next = 1
+current_col = 1
+/*denotes the row number to which the column is linked*/
+ next = 0
+current row = 0
+current_col = 1
+/*denotes the row number to which the column is linked*/
+ next = 0
+current_col = 2
+/*denotes the row number to which the column is linked*/
+ next = -1
+aux = 1
+row_match[0] = 2
+col_match[2] = 0
+vertex = 2
+curent_col = 1
+OUT row_match[2] = 1
+OUT col_match[1] = 2
+_____________________________________
+
+
+Standard Error:
+
+

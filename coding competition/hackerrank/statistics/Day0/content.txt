@@ -1,0 +1,2 @@
+day0_1: Mean, Median, mode 
+day0_2: weighted mean

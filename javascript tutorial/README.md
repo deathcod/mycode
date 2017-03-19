@@ -96,5 +96,3 @@ This is helpful for understanding how to write the javascript to change the html
 http://www.w3schools.com/js/js_htmldom_document.asp
 
 _________________________________________________________________________________________________
-
-

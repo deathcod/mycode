@@ -40,6 +40,8 @@ int main(int argc, char const *argv[])
             q.pop();
             i++;
         }
+        for(int i=0;i<5;i++)
+            printf("%d %d",v[i].second, v[i].second);
         sort(v.begin(),v.end(),cmpfun);
         for(int i=0;i<x;i++)
             printf("%d ",v[i].second);
