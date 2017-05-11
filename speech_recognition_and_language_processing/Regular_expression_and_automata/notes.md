@@ -16,5 +16,6 @@ So far, <.+ has matched <EM>first</EM> test and the engine has arrived at the en
 
 So the match of .+ is reduced to EM>first</EM> tes. The next token in the regex is still >. But now the next character in the string is the last t. Again, these cannot match, causing the engine to backtrack further. The total match so far is reduced to <EM>first</EM> te. But > still cannot match. So the engine continues backtracking until the match of .+ is reduced to EM>first</EM. Now, > can match the next character in the string. The last token in the regex has been matched. The engine reports that <EM>first</EM> has been successfully matched.
 
-Remember that the regex engine is eager to return a match. It will not continue backtracking further to see if there is another possible match. It will report the first valid match it finds. Because of greediness, this is the leftmost longest match
+Remember that the regex engine is eager to return a match. It will not continue backtracking further to see if there is another possible match. It will report the first valid match it finds. Because of greediness, this is the leftmost longest match.
 
+____________________________________________________________________________________________________________________________________
