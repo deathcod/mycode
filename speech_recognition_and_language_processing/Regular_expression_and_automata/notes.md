@@ -18,4 +18,28 @@ So the match of .+ is reduced to EM>first</EM> tes. The next token in the regex 
 
 Remember that the regex engine is eager to return a match. It will not continue backtracking further to see if there is another possible match. It will report the first valid match it finds. Because of greediness, this is the leftmost longest match.
 
-____________________________________________________________________________________________________________________________________
+____
+
+# My Notes
+
+!(note1)[https://github.com/deathcod/mycode/blob/master/speech_recognition_and_language_processing/Regular_expression_and_automata/Regular_expression/IMG_20170509_100836.jpg]
+
+!(note2)[https://github.com/deathcod/mycode/blob/master/speech_recognition_and_language_processing/Regular_expression_and_automata/Regular_expression/IMG_20170509_100853.jpg]
+
+!(note3)[https://github.com/deathcod/mycode/blob/master/speech_recognition_and_language_processing/Regular_expression_and_automata/Regular_expression/IMG_20170509_100902.jpg]
+
+!(note4)[https://github.com/deathcod/mycode/blob/master/speech_recognition_and_language_processing/Regular_expression_and_automata/Regular_expression/IMG_20170509_100951.jpg]
+
+!(note5)[https://github.com/deathcod/mycode/blob/master/speech_recognition_and_language_processing/Regular_expression_and_automata/Regular_expression/IMG_20170509_101009.jpg]
+
+!(note6)[https://github.com/deathcod/mycode/blob/master/speech_recognition_and_language_processing/Regular_expression_and_automata/Regular_expression/IMG_20170509_101239_1.jpg]
+
+!(note7)[https://github.com/deathcod/mycode/blob/master/speech_recognition_and_language_processing/Regular_expression_and_automata/Regular_expression/IMG_20170509_101327_1.jpg]
+
+!(note8)[https://github.com/deathcod/mycode/blob/master/speech_recognition_and_language_processing/Regular_expression_and_automata/Regular_expression/IMG_20170509_101341_1.jpg]
+
+!(note9)[https://github.com/deathcod/mycode/blob/master/speech_recognition_and_language_processing/Regular_expression_and_automata/Regular_expression/IMG_20170509_101432_1.jpg]
+
+!(note9)[https://github.com/deathcod/mycode/blob/master/speech_recognition_and_language_processing/Regular_expression_and_automata/Regular_expression/IMG_20170509_101539.jpg]
+
+!(note9)[https://github.com/deathcod/mycode/blob/master/speech_recognition_and_language_processing/Regular_expression_and_automata/Regular_expression/IMG_20170509_101637_1.jpg]
