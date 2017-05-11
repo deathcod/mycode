@@ -34,7 +34,6 @@ ____
 
 ![note6](https://github.com/deathcod/mycode/blob/master/speech_recognition_and_language_processing/Regular_expression_and_automata/Regular_expression/IMG_20170509_101239_1.jpg)
 
+![note7](https://github.com/deathcod/mycode/blob/master/speech_recognition_and_language_processing/Regular_expression_and_automata/Regular_expression/IMG_20170509_101539.jpg)
 
-![note9](https://github.com/deathcod/mycode/blob/master/speech_recognition_and_language_processing/Regular_expression_and_automata/Regular_expression/IMG_20170509_101539.jpg)
-
-![note9](https://github.com/deathcod/mycode/blob/master/speech_recognition_and_language_processing/Regular_expression_and_automata/Regular_expression/IMG_20170509_101637_1.jpg)
+![note8](https://github.com/deathcod/mycode/blob/master/speech_recognition_and_language_processing/Regular_expression_and_automata/Regular_expression/IMG_20170509_101637_1.jpg)
