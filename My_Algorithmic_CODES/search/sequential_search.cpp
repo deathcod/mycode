@@ -71,13 +71,37 @@ int discreate_binary_search(int *a, int n, int c, int value)
 	}
 	return lower_bound; // returning 0 based index
 }
+
+//Disreate binary search for real numbers.(This is the general situation in competitive programming)
+bool p(double x, double value)
+{
+	// Using log as the monotonic increasing function
+	// We are trying to get the approximate value of x, such that p(x) = value
+	return (log(x) > value);
+}
+
+double discreate_binary_search_real_values(double lower_bound, double upper_bound, double value)
+{
+	while (fabs(upper_bound - lower_bound) > 1e-9)
+	{
+		double mid = lower_bound + (upper_bound - lower_bound)/2.0;
+		if (p(mid, value) == true)
+			upper_bound = mid;
+		else
+			lower_bound = mid;
+	}
+	return lower_bound;
+}
+
 int main(int argc, char const *argv[])
 {
-	int	a[11] = {1, 3, 5, 6, 7, 7, 10, 12, 18, 20, 15};
+	int	a[11] = {1, 3, 5, 6, 7, 7, 10, 12, 18, 20, 25};
 	binary_search(a, 11, 8);
 
 	cout << discreate_binary_search(a, 11, 1, 8) << "\n";
 	cout << discreate_binary_search(a, 11, 2, 8) << "\n";
 
+	//trying to get the value of log-base e value
+	cout << discreate_binary_search_real_values(0, 1e9, 1) << "\n";
 	return 0;
 }
