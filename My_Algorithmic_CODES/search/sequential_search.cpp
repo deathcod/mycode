@@ -1,7 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-
 /*
 Binary search:
 This algorthim helps to find a value in a sorted sequence.
@@ -32,13 +31,14 @@ void binary_search(int *a, int n, int value)
 Discreate Binary Search
 using binary search on monotonic increasing function f whose domain is set of integers.
 
-
+Time Complexity: O(logN) [Since it uses half the search space] 
+Space Complexity: O(1) [Space taken by this algorithm is same for any number of element in the array]
 */
 // return the index.
 int discreate_binary_search(int *a, int n, int c, int value)
 {
 	// to solve this we consider the output from the array in a form of [no, no, no, yes, yes, yes, yes, yes]
-	// no means the condition which we are looking for is not satisfied.
+	// "no" means the condition which we are looking for is not satisfied.
 	int lower_bound = 0, upper_bound = n-1;
 	while(lower_bound < upper_bound)
 	{
@@ -72,7 +72,11 @@ int discreate_binary_search(int *a, int n, int c, int value)
 	return lower_bound; // returning 0 based index
 }
 
-//Disreate binary search for real numbers.(This is the general situation in competitive programming)
+/*Disreate binary search for real numbers.(This is the general situation in competitive programming)
+
+Time Complexity: O(logN)
+Space Complexity: O(1)
+*/
 bool p(double x, double value)
 {
 	// Using log as the monotonic increasing function
