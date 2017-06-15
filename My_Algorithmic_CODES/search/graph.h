@@ -28,7 +28,6 @@ public:
 	
 	void add_directed_node(int x, int y, int cost);
 	void add_undirected_node(int x, int y, int cost);
-	void mark_visited(int x, int value);
 	void display_path(int index);
 	int get_number_of_nodes();
 
@@ -51,11 +50,6 @@ void graph :: add_undirected_node(int x, int y, int cost)
 void graph :: add_heuristic(int x, int cost)
 {
 	h[x] = cost;
-}
-
-void graph :: mark_visited(int x, int value)
-{
-	visited[x] = value;
 }
 
 void graph :: display_path(int index)
