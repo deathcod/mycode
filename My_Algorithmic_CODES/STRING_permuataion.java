@@ -1,11 +1,23 @@
 import java.io.*;
 import java.util.*;
+
 public class code
 {
+	private static Iterator<String> sortedIterator(Iterator<String> it)
+	{
+
+		List<String> lst = new ArrayList<String>();
+		while(it.hasNext())
+			lst.add(it.next());
+
+		Collections.sort(lst);
+		return lst.iterator();
+	}
+
 	static Set<String> set = new HashSet<String>(){
 		public String toString()
 		{
-			Iterator<String> i = iterator();
+			Iterator<String> i = sortedIterator(iterator());
 			if(!i.hasNext())
 				return " ";
 
@@ -19,7 +31,7 @@ public class code
 			}
 		}
 	};
-	public static void permutation(String str) { 
+	private static void permutation(String str) { 
 	    permutation("", str); 
 	}
 

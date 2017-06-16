@@ -104,12 +104,13 @@ void a_star_graph(graph *GRAPH, int source, int destination)
 			f = g[current_node.first] + GRAPH->h[current_node.first];
 
 			GRAPH->path[current_node.first] = GRAPH->path[top.first];
-			GRAPH->path[current_node.first].push_back(current_node.first);
+			GRAPH->path[current_node.first].push_back(current	node.first);
 
 			pq.push(pair<int, int>(current_node.first, f));
 		}
 	}
 }
+
 
 int main(int argc, char const *argv[])
 {
