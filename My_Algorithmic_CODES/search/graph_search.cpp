@@ -1,4 +1,5 @@
 #include "graph.h"
+#include "binary_heap.h"
 
 class mycomparison
 {
@@ -111,6 +112,18 @@ void a_star_graph(graph *GRAPH, int source, int destination)
 	}
 }
 
+/*
+Disjkstra algorithm
+
+Time complexity : O((E + V)logN)
+
+*/
+void Disjkstra(graph *GRAPH, int source, int destination)
+{
+	priority_queue< pair<int,int> , std::vector< pair<int,int> >, mycomparison> pq;
+	pq.push(pair<int, int> (source, 0));
+
+}
 
 int main(int argc, char const *argv[])
 {
