@@ -1,5 +1,5 @@
 #include "graph.h"
-#include "binary_heap.h"
+#include "minheap.h"
 
 class mycomparison
 {
@@ -39,7 +39,9 @@ void a_star_tree(graph *GRAPH, int source, int destination)
 		if(top.first == destination)
 		{
 			// This shows the path a* search tree took.
+			cout << "PATH: ";
 			GRAPH->display_path(destination);
+			cout << "cost: " << top.second;
 			return;
 		}
 
@@ -62,7 +64,8 @@ void a_star_tree(graph *GRAPH, int source, int destination)
 A* graph search algorithm
 The optimality of A*-GRAPH-SEARCH places stronger demands on the heuristic, requiring it to be consistent. A heuristic is consistent if it approximates the actual path cost in an incremental way without taking any step back. Formally, for every node N and for every successor P of N, h(N) <= h(P) + cost(N, P). Fortunately, most natural heuristic functions (particularly those obtained by relaxing problem constraints) are consistent.
 
-
+Time complexity: O((|V| + |E|).log|V|)
+Space complexity: O(V)
 */
 void a_star_graph(graph *GRAPH, int source, int destination)
 {
@@ -89,7 +92,9 @@ void a_star_graph(graph *GRAPH, int source, int destination)
 		if(top.first == destination)
 		{
 			// This shows the path a* search graph took.
+			cout << "PATH: ";
 			GRAPH->display_path(destination);
+			cout << "cost: " << top.second;
 			return;
 		}
 		GRAPH->visited[top.first] = 1;
@@ -105,7 +110,7 @@ void a_star_graph(graph *GRAPH, int source, int destination)
 			f = g[current_node.first] + GRAPH->h[current_node.first];
 
 			GRAPH->path[current_node.first] = GRAPH->path[top.first];
-			GRAPH->path[current_node.first].push_back(current	node.first);
+			GRAPH->path[current_node.first].push_back(current_node.first);
 
 			pq.push(pair<int, int>(current_node.first, f));
 		}
@@ -114,23 +119,79 @@ void a_star_graph(graph *GRAPH, int source, int destination)
 
 /*
 Disjkstra algorithm
+Dijkstra’s algorithm, two sets are maintained, one set contains list of vertices already included in SPT (Shortest Path Tree), other set contains vertices not yet included. With adjacency list representation, all vertices of a graph can be traversed in O(V+E) time using BFS. The idea is to traverse all vertices of graph using BFS and use a Min Heap to store the vertices not yet included in SPT (or the vertices for which shortest distance is not finalized yet).  Min Heap is used as a priority queue to get the minimum distance vertex from set of not yet included vertices. Time complexity of operations like extract-min and decrease-key value is O(LogV) for Min Heap
 
-Time complexity : O((E + V)logN)
+Time complexity : O((E + V)logV)
+Space complexity : O(V)
+since at worst case you need to hold all vertices in the heap
 
 */
 void Disjkstra(graph *GRAPH, int source, int destination)
 {
-	priority_queue< pair<int,int> , std::vector< pair<int,int> >, mycomparison> pq;
-	pq.push(pair<int, int> (source, 0));
+	
+	//initializing the heap
+	int nodes = GRAPH->get_number_of_nodes();
 
+	minheap *pq = new minheap(nodes);
+	for(int i=0; i<nodes; i++)
+	{
+		pq->insert_key(pp(i, 1e9));
+	}
+
+	pq->decrease_key(source, 0);
+	GRAPH->path[source].push_back(source);
+
+	while(!pq->isempty())
+	{
+		pp top = pq->extract_min();
+
+		//cout << "testing...";
+		//cout << top.first  << " " << top.second << "\n";
+
+		if(top.first == destination)
+		{
+			cout << "PATH: ";
+			GRAPH->display_path(destination);
+			cout << "cost: " << top.second;
+			return;
+		}
+		GRAPH->visited[top.first] = 1;
+
+		for (int i = 0; i < GRAPH->adj_list[top.first].size(); ++i)
+		{
+			pp current_node = GRAPH->adj_list[top.first][i];
+			if(GRAPH->visited[current_node.first] == 1)
+				continue;
+
+			//cout << "\n----------\n";
+			//cout << "current_node: " << current_node.first << "\n";
+			//cout << "get_value: " << pq->get_val(current_node.first) << "\n";
+			//cout << "top_data + current_data: " << top.second + current_node.second << "\n";
+			if(pq->get_val(current_node.first) > top.second + current_node.second)
+			{
+				//cout << "replace";
+				pq->decrease_key(current_node.first, top.second + current_node.second);
+
+				GRAPH->path[current_node.first] = GRAPH->path[top.first];
+				GRAPH->path[current_node.first].push_back(current_node.first);
+			}
+		}
+	}
 }
 
 int main(int argc, char const *argv[])
 {
-	graph *g = example1(10);
-	a_star_tree(g, 1, 5);
+	graph *g = example2();
+	a_star_tree(g, 0, 4);
+	cout << "\n\n";
 
-	g = example1(10);
-	a_star_graph(g, 1, 5);
+	g = example2();
+	a_star_graph(g, 0, 4);
+	cout << "\n\n";
+
+	g = example2();
+	Disjkstra(g, 0, 4);
+	cout << "\n\n";
+
 	return 0;
 }
