@@ -1,49 +1,58 @@
 /*
-floyd warshal
-by chinmay rakshit 7/1/2016
-Free Tickets codechef
-input
-4 5
-1 2 10
-1 3 24
-2 3 2
-2 4 15
-3 4 7
-output
-19
+Floyd Warshall
+The idea is to one by one pick all vertices and update all shortest paths which include the picked vertex as an intermediate vertex in the shortest path. When we pick vertex number k as an intermediate vertex, we already have considered vertices {0, 1, 2, .. k-1} as intermediate vertices. For every pair (i, j) of source and destination vertices respectively, there are two possible cases.
+1) k is not an intermediate vertex in shortest path from i to j. We keep the value of dist[i][j] as it is.
+2) k is an intermediate vertex in shortest path from i to j. We update the value of dist[i][j] as dist[i][k] + dist[k][j].
+
+Time complexity = O(V^3)
+Space complexiy = O(V^2)
 */
+
 
 #include <bits/stdc++.h>
 using namespace std;
-typedef pair<int,int> pp;
-int min(int x,int y){return(x<y)?x:y;}
-int max(int x,int y){return(x>y)?x:y;}
 
-
-int a[233][233];
-int main(int argc, char const *argv[])
+int main()
 {
-    int t,n,x,y,z;
-    scanf("%d %d",&n,&t);
-    for(int i=1;i<=n;i++)
-        for(int j=1;j<=n;j++)
-            a[i][j]=1e9;
-    for(int i=1;i<=n;i++)
-        a[i][i]=0;
-    for(int i=0;i<t;i++)
+    int adj_matrix[21][21] = {0};
+    int t;
+    cin >> t;
+    while(t--)
     {
-        scanf("%d %d %d",&x,&y,&z);
-        a[x][y]=z;
-        a[y][x]=z;
+        int no_of_vertices;
+        cin >> no_of_vertices;
+        
+        //creating the graph
+        for(int i=0; i<no_of_vertices; i++)
+        {
+            for(int j=0; j<no_of_vertices; j++)
+            {
+                cin >> adj_matrix[i][j];
+            }
+        }
+        
+        //applying the floyd warshall algorithm
+        for(int k=0; k<no_of_vertices; k++)
+        {
+            for(int i=0; i<no_of_vertices; i++)
+            {
+                for(int j=0; j<no_of_vertices;j++)
+                {
+                    if(adj_matrix[i][j] > adj_matrix[i][k] + adj_matrix[k][j])
+                        adj_matrix[i][j] = adj_matrix[i][k] + adj_matrix[k][j];
+                }
+            }
+        }
+        
+        //display the graph
+        for(int i=0; i<no_of_vertices; i++)
+        {
+            for(int j=0; j<no_of_vertices; j++)
+            {
+                cout << adj_matrix[i][j] << " ";
+            }
+        }
+        cout << "\n";
     }
-    for(int k=1;k<=n;k++)
-        for(int i=1;i<=n;i++)
-            for(int j=1;j<=n;j++)
-                a[i][j]=min(a[i][j],a[i][k]+a[k][j]);
-    x=0;
-    for(int i=1;i<=n;i++)
-        for(int j=1;j<=n;j++)
-            x=max(a[i][j],x);
-    printf("%d\n",x);
     return 0;
 }
