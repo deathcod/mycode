@@ -308,7 +308,7 @@ if [ "$?" -ne "0" ]; then
 fi  
 ```  
   
-will attempt to run /usr/local/bin/my-command which should exit with a value of zero if all went well, or a nonzero value on failure. We can then handle this by checking the value of $? after calling the command. This helps make scripts robust and more intelligent.  
+will attempt to run /usr/local/bin/my-command which should exit with a value of zero if all went well, or a nonzero value on failure. We can then handle this by checking the value of ``` $? ``` after calling the command. This helps make scripts robust and more intelligent.  
 Well-behaved applications should return zero on success.   
   
   
@@ -319,7 +319,7 @@ The other two main variables set for you by the environment are $$ and $!. These
 The ``` $$ ``` variable is the PID (Process IDentifier) of the currently running shell. This can be useful for creating temporary files, such as /tmp/my-script.$$ which is useful if many instances of the script could be run at the same time, and they all need their own temporary files.  
   
   
-The $! variable is the PID of the last run background process. This is useful to keep track of the process as it gets on with its job.  
+The ``` $! ``` variable is the PID of the last run background process. This is useful to keep track of the process as it gets on with its job.  
   
 Another interesting variable is ``` IFS ```. This is the Internal Field Separator. The default value is SPACE TAB NEWLINE, but if you are changing it, it's easier to take a copy, as shown:  
   
