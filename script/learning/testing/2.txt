@@ -1,0 +1,40 @@
+abdikoj :  ['{{IPA|[ab.dik.\xc9\x94j]|lang=sq}}', '{{IPA|[ab.diq.\xc9\x94j]|lang=sq}}']
+
+abece :  ['{{IPA|[a.b\xc9\x9b.t\xcd\xa1s\xc9\x9b]|lang=sq}}', '{{IPA|[a.\xce\xb2e\xcb\x88t\xcd\xa1se]|lang=osp}}', '{{IPA|/\xc9\x91\xcb\x90.be\xcb\x90.\xcb\x88d\xcd\xa1\xca\x92e\xcb\x90/|lang=tr}}']
+
+abat :  ['{{IPA|/\xc9\x99\xcb\x88bat/|[\xc9\x99\xcb\x88\xce\xb2at]|lang=ca}}', '{{IPA|/a\xcb\x88bat/|[a\xcb\x88\xce\xb2at]|lang=ca}}', '{{IPA|[a\xcb\x88\xce\xb2at]|lang=oc}}']
+
+abdikim :  []
+
+abonohem :  ['{{IPA|[a.b\xc9\x94n.oh\xc9\x9bm]|lang=sq}}']
+
+abstenonjës :  []
+
+abetare :  ['{{IPA|[a.b\xc9\x9b.ta.\xc9\xbe\xc9\x9b]|lang=sq}}', '{{IPA|[a.b\xc9\x9b.t\xc9\x91.\xc9\xbe\xc9\x9b]|lang=sq}}']
+
+abazhur :  ['{{IPA|[aba\xca\x92u\xc9\xbe]|lang=sq}}']
+
+abstenim :  ['{{IPA|[abs.t\xc9\x9bn.im]|lang=sq}}']
+
+abanoz :  ['{{IPA|/\xc9\x91b\xc9\x91no\xca\x90/|lang=tr}}']
+
+absorbim :  ['{{IPA|[ab.s\xc9\x94rb.im]|lang=sq}}']
+
+abonim :  ['{{IPA|[a.b\xc9\x94n.im]|lang=sq}}']
+
+absolutisht :  ['{{IPA|[apsolu\xcb\x88ti\xca\x83t]|lang=sq}}']
+
+absolut :  ['{{IPA|[apso\xcb\x88lut]|lang=sq}}', '{{IPA|lang=de|/apzo\xcb\x88lu\xcb\x90t/|[\xca\x94apz\xcc\xa5o\xcb\x88lu\xcb\x90t\xca\xb0]}}', '{{IPA|/ab.so\xcb\x88lut/|/ap.so\xcb\x88lut/|lang=ro}}']
+
+abrogoj :  ['{{IPA|[ab\xc9\xbe\xc9\x94\xcb\x88\xc9\xa1\xc9\x94j]|lang=sq}}']
+
+abrogim :  ['{{IPA|[ab\xc9\xbe\xc9\x94\xc9\xa1im]|lang=sq}}']
+
+absolutizëm :  ['{{IPA|[ap.s\xc9\x94lu\xcb\x88tiz(\xc9\x99)m]|lang=sq}}']
+
+abstenoj :  ['{{IPA|[abs.t\xc9\x9bn.\xc9\x94j]|lang=sq}}']
+
+absorboj :  ['{{IPA|[ab.s\xc9\x94\xc9\xbeb.\xc9\x94j]|lang=sq}}']
+
+abonuar :  ['{{IPA|[a.b\xc9\x94nu.ar]|lang=sq}}']
+

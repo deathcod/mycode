@@ -1,0 +1,3 @@
+grep-errors.txt:ls-l.txt:-rw-rw-r-- 1 deathcoder007 deathcoder007 0 Jul 29 12:05 ls-l.txt
+ls-l.txt:-rw-rw-r-- 1 deathcoder007 deathcoder007 0 Jul 29 12:05 ls-l.txt
+grep-errors.txt:ls-l.txt:-rw-rw-r-- 1 deathcoder007 deathcoder007 0 Jul 29 12:05 ls-l.txt

@@ -1,0 +1,452 @@
+==Albanian==
+
+===Etymology===
+Borrowed from {{etyl|la|sq}} {{m|la|abdicō||abdicate}}.
+
+===Pronunciation===
+* {{IPA|[ab.dik.ɔj]|lang=sq}} {{a|Tosk}}
+* {{IPA|[ab.diq.ɔj]|lang=sq}} {{a|Gheg}}
+
+===Verb===
+{{head|sq|verb}}
+
+# {{lb|sq|transitive}} [[abdicate]], [[resign]]
+
+====Conjugation====
+{{sq-conj-oj|abdik}}
+
+===External links===
+* {{R:FGSS}}
+
+[[de:abdikoj]]
+[[el:abdikoj]]
+[[eo:abdikoj]]
+[[fr:abdikoj]]
+[[li:abdikoj]]
+[[mg:abdikoj]]
+[[sq:abdikoj]]
+[[sv:abdikoj]]
+{{also|abecé|abecê|ābece|ābecē|ábécé|á-bê-cê}}
+==Albanian==
+
+===Alternative forms===
+* {{l|sq|abëcë}}
+
+===Pronunciation===
+* {{IPA|[a.bɛ.t͡sɛ]|lang=sq}}
+
+===Noun===
+{{head|sq|nouns}}
+
+# [[alphabet]], [[element]]s, [[rudiment]]s
+
+[[Category:Albanian nouns]]
+
+----
+
+==Old Spanish==
+
+===Alternative forms===
+* {{l|osp|A.B.C.}}
+
+===Etymology===
+From the names of the first three letters of the {{etyl|la|osp}} alphabet.
+
+===Pronunciation===
+* {{IPA|[a.βeˈt͡se]|lang=osp}}
+
+===Noun===
+{{osp-noun|m|-}}
+
+# [[alphabet]], [[ABC]]s
+#* '''c. 1250:''' [[w:Alfonso X|Alfonso X]], ''Lapidario'', f. 102v.
+#*: […] ¬ en la ſazon q́ deſcenden los rayos dela figura delas ſiete letras del '''abece''' de ſaturno […]
+#*:: […] and in the season in which descend the rays of the shape of the seven letters of the '''alphabet''' of Saturn […]
+
+====Descendants====
+* Spanish: {{l|es|abecé}}
+
+----
+
+==Turkish==
+
+===Etymology===
+A combination of the first three letters of the [[Turkish alphabet]]; {{m|tr|a}}, {{m|tr|be}} and {{m|tr|ce}}
+
+===Pronunciation===
+* {{IPA|/ɑː.beː.ˈd͡ʒeː/|lang=tr}}
+
+===Noun===
+{{tr-noun|yi|ler}}
+
+# [[alphabet]]
+
+====Synonyms====
+* {{l|tr|alfabe}}
+* {{l|tr|elifbe}}
+
+====Declension====
+{{tr-decl-noun
+|[[abece]]|[[abeceler]]
+|[[abeceyi]]|[[abeceleri]]
+|[[abeceye]]|[[abecelere]]
+|[[abecede]]|[[abecelerde]]
+|[[abeceden]]|[[abecelerden]]
+|[[abecenin]]|[[abecelerin]]
+}}
+
+[[af:abece]]
+[[bs:abece]]
+[[el:abece]]
+[[fr:abece]]
+[[fy:abece]]
+[[ko:abece]]
+[[id:abece]]
+[[ku:abece]]
+[[hu:abece]]
+[[mg:abece]]
+[[nl:abece]]
+[[pl:abece]]
+[[ru:abece]]
+[[sq:abece]]
+[[sv:abece]]
+[[tr:abece]]
+[[zh:abece]]
+==Albanian==
+
+===Etymology===
+Cf. Italian {{m|it|abate}}.
+
+===Noun===
+{{head|sq|noun}}
+
+# [[abbot]]
+
+===External links===
+* {{R:FGSS}}
+
+----
+
+==Aromanian==
+
+===Alternative forms===
+* {{l|rup|abatu}}
+
+===Etymology===
+From {{inh|rup|VL.|*abbatō}}, {{m|la|*abbatuō}}, from {{inh|rup|la|battuō}}. Compare {{cog|ro|abate|abate, abat}}.
+
+===Verb===
+{{head|rup|verb|third-person singular present indicative|abati|or|abate|past participle|abãtutã}}
+
+# I make space, [[distance]] myself.
+# I [[divert]], [[deviate]].
+
+====Related terms====
+* {{l|rup|abatiri}}/{{l|rup|abatire}}
+* {{l|rup|abãtut}}
+* {{l|rup|bat}}
+
+----
+
+==Catalan==
+
+===Etymology===
+From {{inh|ca|pro|-}}, from {{inh|ca|la|abbās|abbās, abbātem|abbot}}, from {{der|ca|grc|ἀββα|ἀββᾶ|sc=polytonic}}, from {{der|ca|arc|אבא||father|tr=’abbā|sc=Hebr}}.
+
+===Pronunciation===
+* {{a|Eastern}} {{IPA|/əˈbat/|[əˈβat]|lang=ca}}
+* {{a|Western}} {{IPA|/aˈbat/|[aˈβat]|lang=ca}}
+* {{rhymes|at|lang=ca}}
+
+===Noun===
+{{ca-noun|m}}
+
+# [[abbot]]
+# [[rector]]
+# A type of [[sausage]] made using the [[stomach]] of a [[pig]] as the [[casing]], and stuffed with [[minced]] [[meat]].
+
+====Synonyms====
+* {{sense|rector}} {{l|ca|rector}}
+
+====Related terms====
+* {{m|ca|abacial||abbatial}}
+* {{m|ca|abadessa||abbess}}
+* {{m|ca|abadia||abbey” or “abbacy}}
+
+===Verb===
+{{head|ca|verb form}}
+
+# {{ca-verb form of|p=3|n=sg|t=pres|m=ind|abatre}}
+# {{ca-verb form of|p=2|n=sg|m=impr|abatre}}
+
+[[Category:ca:Christianity]]
+[[Category:ca:Sausages]]
+
+----
+
+==French==
+
+===Verb===
+{{fr-verb-form}}
+
+# {{inflection of|abattre||3|s|pres|indc|lang=fr}}
+
+===Noun===
+{{fr-noun|m}}
+
+# [[giblet]]
+
+===External links===
+* {{R:TLFi}}
+
+----
+
+==Hiligaynon==
+
+===Verb===
+{{hil-verb|ábat|dim=abat-abat|dim-stress=abát-ábat|caus=paabat|caus-stress=paábat|freq=abat-abat|freq-stress=abát-ábat}}
+
+# to [[follow]] after
+
+----
+
+==Occitan==
+
+===Etymology===
+From {{inh|oc|pro|-}}, from {{inh|oc|la|abbās|abbās, abbātem|abbot}}, from {{der|oc|grc|ἀββα|ἀββᾶ|sc=polytonic}}, from {{der|oc|arc|אבא||father|tr=’abbā|sc=Hebr}}.
+
+===Pronunciation===
+* {{IPA|[aˈβat]|lang=oc}}
+
+===Noun===
+{{oc-noun|m}}
+
+# [[abbot]]
+
+----
+
+==Tagalog==
+
+===Noun===
+{{tl-noun}}
+
+# An [[ambush]].
+
+===Verb===
+{{head|tl|verb}}
+
+# To [[ambush]].
+#: '''''Inabatan''' ng mga rebelde ang mga sundalo.''
+#:: The rebels ambushed the soldiers.
+
+[[br:abat]]
+[[ca:abat]]
+[[de:abat]]
+[[et:abat]]
+[[el:abat]]
+[[es:abat]]
+[[eo:abat]]
+[[eu:abat]]
+[[fr:abat]]
+[[gl:abat]]
+[[ko:abat]]
+[[io:abat]]
+[[id:abat]]
+[[ie:abat]]
+[[it:abat]]
+[[lt:abat]]
+[[hu:abat]]
+[[mk:abat]]
+[[mg:abat]]
+[[nl:abat]]
+[[no:abat]]
+[[oc:abat]]
+[[uz:abat]]
+[[pl:abat]]
+[[pt:abat]]
+[[ru:abat]]
+[[sq:abat]]
+[[sv:abat]]
+[[tl:abat]]
+[[chr:abat]]
+[[tr:abat]]
+[[tk:abat]]
+[[uk:abat]]
+[[vi:abat]]
+[[zh:abat]]
+==Albanian==
+
+===Etymology===
+{{suffix|abdikoj|im|lang=sq}}
+
+===Noun===
+{{sq-noun|m|abdikime|abdikimi|abdikimet}}
+
+# [[abdication]]
+
+====Declension====
+{{sq-gerund}}
+
+===External links===
+* {{R:FGSS}}
+
+[[de:abdikim]]
+[[fr:abdikim]]
+[[mg:abdikim]]
+[[pl:abdikim]]
+[[sq:abdikim]]
+[[sv:abdikim]]
+==Albanian==
+
+===Etymology===
+From {{der|sq|fr|abonner}}.
+
+===Pronunciation===
+* {{IPA|[a.bɔn.ohɛm]|lang=sq}}
+
+===Verb===
+{{head|sq|verb}}
+
+# {{lb|sq|transitive}} subscribe, [[subscribe]] [[to]]
+
+====Conjugation====
+{{sq-conj-ohem|abon}}
+
+[[ku:abonohem]]
+[[li:abonohem]]
+[[mg:abonohem]]
+[[sv:abonohem]]
+==Albanian==
+
+===Pronunciation===
+* {{IPA|[a.bɛ.ta.ɾɛ]|lang=sq}} {{a|Tosk}}
+* {{IPA|[a.bɛ.tɑ.ɾɛ]|lang=sq}} {{a|Gheg}}
+
+===Noun===
+{{sq-noun|g=f}}
+
+# [[ABC]] book
+# [[primer]]; a book used by children learning to read
+# [[alphabet]]
+#: {{ux|sq|abetare morze|inline=1|[[Morse code]]}}
+
+[[et:abetare]]
+[[fr:abetare]]
+[[mg:abetare]]
+[[pl:abetare]]
+[[ru:abetare]]
+[[sq:abetare]]
+[[sv:abetare]]
+[[chr:abetare]]
+==Albanian==
+
+===Etymology===
+{{bor|sq|fr|abat-jour}}.
+
+===Pronunciation===
+* {{IPA|[abaʒuɾ]|lang=sq}}
+
+===Noun===
+{{sq-noun|g=m}}
+
+# [[lampshade]] (cover over a lamp)
+
+===External links===
+* {{R:FGSS}}
+
+{{tbot entry|Albanian|lampshade|2007|December|sq}}
+
+[[hr:abazhur]]
+[[lt:abazhur]]
+[[pl:abazhur]]
+[[ru:abazhur]]
+[[sq:abazhur]]
+[[sv:abazhur]]
+[[tr:abazhur]]
+==Albanian==
+
+===Etymology===
+{{bor|sq|ota}} (compare {{cog|tr|abanoz}}), from {{der|sq|fa|آبنوس|tr=âbnus}}, from {{der|sq|grc|ἔβενος}}, from {{der|sq|egy|𓍁𓈖𓏭𓆱|tr=hbny}}.
+
+===Noun===
+{{head|sq|noun}}
+
+# [[ebony]] tree
+
+===External links===
+* {{R:FGSS}}
+
+{{topics|sq|Trees}}
+
+----
+
+==Turkish==
+
+===Etymology===
+From {{inh|tr|ota}}, a {{bor|tr|fa|آبنوس|tr=âbnus|nocap=1}}, from {{der|tr|grc|ἔβενος}}, from {{der|tr|egy|𓍁𓈖𓏭𓆱|tr=hbny}}.
+
+===Pronunciation===
+* {{IPA|/ɑbɑnoʐ/|lang=tr}}
+
+===Noun===
+{{tr-noun|u|lar}}
+
+# [[ebony]] tree
+
+====Declension====
+{{tr-noun-c|o|d}}
+
+{{topics|tr|Trees}}
+
+[[de:abanoz]]
+[[et:abanoz]]
+[[el:abanoz]]
+[[ko:abanoz]]
+[[ku:abanoz]]
+[[mg:abanoz]]
+[[nl:abanoz]]
+[[pl:abanoz]]
+[[ru:abanoz]]
+[[sq:abanoz]]
+[[fi:abanoz]]
+[[sv:abanoz]]
+[[tr:abanoz]]
+[[zh:abanoz]]
+==Albanian==
+
+===Etymology===
+From {{der|sq|fr|abonner}}.
+
+===Pronunciation===
+* {{IPA|[a.bɔn.im]|lang=sq}}
+
+===Noun===
+{{head|sq|nouns}}
+
+# [[subscription]]
+
+[[Category:Albanian nouns]]
+
+[[ca:abonim]]
+[[fr:abonim]]
+[[mg:abonim]]
+[[sq:abonim]]
+[[sv:abonim]]
+==Albanian==
+
+===Etymology===
+From {{der|sq|fr|abonner}}.
+
+===Pronunciation===
+* {{IPA|[a.bɔnu.ar]|lang=sq}}
+
+===Noun===
+{{head|sq|noun}}
+
+# A [[subscriber]]
+
+[[Category:Albanian nouns]]
+
+[[fr:abonuar]]
+[[mg:abonuar]]
+[[sv:abonuar]]

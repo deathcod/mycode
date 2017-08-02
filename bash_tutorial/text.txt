@@ -1,0 +1,2 @@
+grep: input file ‘grep-errors.txt’ is also the output
+ls-l.txt:-rw-rw-r-- 1 deathcoder007 deathcoder007 0 Jul 29 12:05 ls-l.txt
