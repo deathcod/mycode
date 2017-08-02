@@ -286,18 +286,17 @@ fi
 while [ -n "$X" ] : check if length of n is zero  
   
   
-The first set of variables we will look at are ** $0 .. $9 and $#. **  
+The first set of variables we will look at are**$0 .. $9 and $#.** 
 The variable $0 is the basename of the program as it was called.  
 $1 .. $9 are the first 9 additional parameters the script was called with.  
   
-The variable ** $@ ** is all parameters $1 .. whatever.   
+The variable**$@**is all parameters $1 .. whatever.   
   
-The variable ** $* **, is similar, but does not preserve any whitespace, and quoting, so "File with spaces" becomes "File" "with" "spaces".   
+The variable**$*** is similar, but does not preserve any whitespace, and quoting, so "File with spaces" becomes "File" "with" "spaces".   
   
 This is similar to the echo stuff we looked at in A First Script. As a general rule, use $@ and avoid $*.  
   
-  
-** $# ** is the number of parameters the script was called with.  
+  **$#**is the number of parameters the script was called with.  
   
   
 ```  
@@ -316,12 +315,12 @@ The other two main variables set for you by the environment are $$ and $!. These
   
   
   
-The ** $$ ** variable is the PID (Process IDentifier) of the currently running shell. This can be useful for creating temporary files, such as /tmp/my-script.$$ which is useful if many instances of the script could be run at the same time, and they all need their own temporary files.  
+The**$$**variable is the PID (Process IDentifier) of the currently running shell. This can be useful for creating temporary files, such as /tmp/my-script.$$ which is useful if many instances of the script could be run at the same time, and they all need their own temporary files.  
   
   
 The $! variable is the PID of the last run background process. This is useful to keep track of the process as it gets on with its job.  
   
-Another interesting variable is ** IFS **. This is the Internal Field Separator. The default value is SPACE TAB NEWLINE, but if you are changing it, it's easier to take a copy, as shown:  
+Another interesting variable is**IFS** This is the Internal Field Separator. The default value is SPACE TAB NEWLINE, but if you are changing it, it's easier to take a copy, as shown:  
   
 ```  
 #!/bin/sh  
