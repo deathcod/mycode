@@ -1,0 +1,5 @@
+{
+  "read" : "allow",
+  "write" : "denty",
+  "authenticate" : "deny"
+}
